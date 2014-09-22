@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TMTVO.ThemeApi
 {
-    public class ThemeApi
+    public interface IWidget
     {
+        bool Active { get; }
+        void FadeOut();
+        void Tick();
     }
 }
